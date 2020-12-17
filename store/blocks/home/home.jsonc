@@ -1,0 +1,147 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#demo",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "__fold__.experimentalLazyAssets",
+    /*  "flex-layout.row#deals",*/
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf",
+      "rich-text#shelf-title-novidades",
+      "flex-layout.row#shelfnovidades"
+   /*   "info-card#home",*/
+     
+   /*    "newsletter"*/
+    ]
+  },
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "https://mercadaodosoculosb2b.vteximg.com.br/arquivos/banner_mdo3.png",
+          "mobileImage": "https://mercadaodosoculosb2b.vteximg.com.br/arquivos/banner_mdo3_mobile.jpg"
+        },
+        {
+          "image": "https://mercadaodosoculosb2b.vteximg.com.br/arquivos/banner_mdo.png",
+          "mobileImage": "https://mercadaodosoculosb2b.vteximg.com.br/arquivos/banners_mdo_mobile.jpg"
+        },
+        {
+          "image": "https://mercadaodosoculosb2b.vteximg.com.br/arquivos/banner_mdo1.png",
+          "mobileImage": "https://mercadaodosoculosb2b.vteximg.com.br/arquivos/banner_mdo1_mobile.jpg"
+        },
+        {
+          "image": "https://mercadaodosoculosb2b.vteximg.com.br/arquivos/banner_mdo2.png",
+          "mobileImage": "https://mercadaodosoculosb2b.vteximg.com.br/arquivos/banner_mdo2_mobile.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "autoplay":{
+         "timeout":5000,
+         "stopOnHover":true
+
+      },
+
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "PRODUTOS EM DESTAQUE",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByNameASC",
+      "collection": "137"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop":5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+
+
+
+
+
+  
+  "rich-text#shelf-title-novidades": {
+    "props": {
+      "text": "NOVIDADES",
+      "blockClass": "shelfTitle"
+      
+    }
+  },
+
+  "flex-layout.row#shelfnovidades": {
+    "children": ["list-context.product-list#novidades"]
+  },
+  "list-context.product-list#novidades": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#novidades"],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC",
+      "collection": "138"
+    }
+  },
+  "slider-layout#novidades": {
+    "props": {
+      "itemsPerPage": {
+        "desktop":5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+
+
+
+
+
+
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  }
+}

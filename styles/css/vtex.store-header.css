@@ -1,0 +1,139 @@
+/* add transitions */
+:global(.vtex-sticky-layout-0-x-container)
+  :global(.vtex-store-components-3-x-logoLink),
+:global(.vtex-sticky-layout-0-x-container)
+  :global(.vtex-minicart-2-x-openIconContainer),
+:global(.vtex-sticky-layout-0-x-container)
+  :global(.vtex-store-components-3-x-searchBarContainer) {
+  transition: all 0.3s ease;
+  display: block;
+}
+
+/* desktop/mobile main header padding and background transitions */
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+  transition: background 0.3s ease;
+  will-change: padding, background;
+}
+
+/* main header desktop has a bigger padding when not stuck */
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* add a box-shadow to desktop/mobile header when stuck */
+:global(.vtex-sticky-layout-0-x-wrapper--stuck)
+  :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+:global(.vtex-sticky-layout-0-x-wrapper--stuck)
+  :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+/*
+ * remove the extra padding when stuck from the desktop header
+ * we add a transition only when "stuck" for the "unstick" step seem faster
+ */
+:global(.vtex-sticky-layout-0-x-wrapper--stuck)
+  :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
+  transition: padding 0.3s ease, background 0.3s ease;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* if supported add some translucency to the desktop/mobile header background */
+@supports (backdrop-filter: blur(5px)) {
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck)
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck)
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+    backdrop-filter: blur(8px);
+  }
+
+  /* header background when stuck and not hovered */
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover)
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover)
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+    background: rgba(240, 240, 240, 0.8);
+  }
+}
+
+/* stick wrapper with the same color as the desktop/mobile header */
+:global(.vtex-sticky-layout-0-x-wrapper--sticky-header) {
+  background-color: #f0f0f0;
+}
+
+/* resize the logo for neat effect */
+:global(.vtex-sticky-layout-0-x-wrapper--stuck)
+  :global(.vtex-store-components-3-x-logoLink) {
+  transform: scale(0.85);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :global(.vtex-sticky-layout-0-x-container)
+    :global(.vtex-store-components-3-x-logoLink),
+  :global(.vtex-sticky-layout-0-x-container)
+    :global(.vtex-minicart-2-x-openIconContainer),
+  :global(.vtex-sticky-layout-0-x-container)
+    :global(.vtex-store-components-3-x-searchBarContainer),
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck)
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
+    transition: none;
+  }
+}
+
+/* Custom MDO */
+:global(.vtex-store-components-3-x-notificationBarInner){display: none;}
+:global(.vtex-menu-2-x-menuItem--oculto){pointer-events: none;display: none!important;}
+:global(.vtex-locale-switcher-0-x-container){display: none!important;}
+:global(.vtex-rich-text-0-x-paragraph--footer-aling-center){text-align:center;}
+:global(.vtex-rich-text-0-x-wrapper--footer-aling-center){width: 100%;}
+:global(.vtex-flex-layout-0-x-flexRow--menu-row){display:none;}
+:global(.vtex-flex-layout-0-x-flexRow--payment-methods){display:none;}
+:global(.vtex-sticky-layout-0-x-container--sticky-header){background-color:rgba(0,0,0,.2)}
+
+
+/*:global(.vtex-flex-layout-0-x-flexRowContent--main-header){background-color:rgba(0,0,0,.2);padding-left: 10%; padding-right: 10%;}*/
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header){background-color: rgba(0,0,0,.2);padding-left: 5%;padding-right: 5%;}
+
+
+
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel){margin-top: -118px;}
+:global(.vtex-sticky-layout-0-x-wrapper--sticky-header--stuck)
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header){background-color:#b42c2c!important;}
+:global(.vtex-menu-2-x-menuContainer){min-height:50px;}
+:global(.vtex-breadcrumb-1-x-container){max-width: 1367px;margin: auto;}
+:global(.vtex-store-components-3-x-autoCompleteOuterContainer){margin-top: 20px;}
+:global(.vtex-store-drawer-0-x-childrenContainer){height: 450px;}
+:global(.vtex-store-drawer-0-x-childrenContainer)
+:global(.vtex-store-components-3-x-searchBarContainer){margin-left: 10px;}
+
+
+:global(.vtex-store-drawer-0-x-childrenContainer)
+:global(.vtex-menu-2-x-styledLinkContainer--menulojaonline),
+:global(.vtex-store-drawer-0-x-childrenContainer)
+:global(.vtex-menu-2-x-styledLinkContainer--menuoculosdesol),
+:global(.vtex-store-drawer-0-x-childrenContainer)
+:global(.vtex-menu-2-x-styledLinkContainer--menumaisvendidos),
+:global(.vtex-store-drawer-0-x-childrenContainer)
+:global(.vtex-menu-2-x-styledLinkContainer--menupromocao),
+:global(.vtex-store-drawer-0-x-childrenContainer)
+:global(.vtex-menu-2-x-styledLinkContainer--menulancamentos){background-position: center left;padding-left: 50px;height: 60px;}
+:global(.vtex-store-drawer-0-x-childrenContainer)
+:global(.vtex-menu-2-x-menuItem--menuoculosdegrau){background-position: center left; padding-left: 26px;height: 60px;margin-left: 24px;}
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile ){background-color:#b42c2c!important;}
+ :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile)
+:global(.vtex-store-components-3-x-logoImage){width: 135px;margin-left: 35px;}
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile)
+:global(.vtex-store-drawer-0-x-menuIcon){color:#fff;}
+:global(.vtex-login-2-x-optionsListItem)
+:global(.vtex-button__label){font-size: 12px;color:#fff;}
+:global(.vtex-login-2-x-optionsListItem)
+:global(.vtex-button){background-color:#b42c2c;}
+:global(.vtex-flex-layout-0-x-flexRow--menu-link){position: relative;z-index: 1;background-color:#fff;}
+:global(.vtex-minicart-2-x-minicartQuantityBadgeDefault){background-color: #fff;color: #b42c2c;}
+:global(.vtex-menu-2-x-menuItem--menulojaonline){display:none;}
+:global(.vtex-store-components-3-x-searchBarContainer )
+:global(.vtex-styleguide-9-x-input){color: #fff!important;}
+:global(.vtex-store-components-3-x-closeIcon){color: #fff!important;}
