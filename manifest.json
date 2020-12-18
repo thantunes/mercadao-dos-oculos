@@ -1,7 +1,7 @@
 {
-  "vendor": "vtex",
-  "name": "store-theme",
-  "version": "4.1.0",
+  "vendor": "mercadaodosoculosb2b",
+  "name": "mercadao-theme",
+  "version": "0.0.00",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
