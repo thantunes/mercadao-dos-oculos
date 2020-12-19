@@ -137,3 +137,11 @@
 :global(.vtex-store-components-3-x-searchBarContainer )
 :global(.vtex-styleguide-9-x-input){color: #fff!important;}
 :global(.vtex-store-components-3-x-closeIcon){color: #fff!important;}
+
+@media only screen and (max-width: 840px) {
+:global(.vtex-login-2-x-buttonLink){background-image: url('https://mercadaodosoculosb2b.vtexassets.com/arquivos/user-32.png');background-repeat: no-repeat;
+  background-position: center;}
+  :global(.vtex-minicart-2-x-minicartContainer){margin-left: 0px!important;}
+  :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile){ margin-left:0px!important; }
+  :global(.vtex-account_menu-link){color:#000!important;}
+}
