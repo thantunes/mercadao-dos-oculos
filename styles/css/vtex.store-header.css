@@ -124,7 +124,7 @@
 :global(.vtex-menu-2-x-menuItem--menuoculosdegrau){background-position: center left; padding-left: 26px;height: 60px;margin-left: 24px;}
 :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile ){background-color:#b42c2c!important;}
  :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile)
-:global(.vtex-store-components-3-x-logoImage){width: 135px;margin-left: 35px;}
+:global(.vtex-store-components-3-x-logoImage){width: 135px;}
 :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile)
 :global(.vtex-store-drawer-0-x-menuIcon){color:#fff;}
 :global(.vtex-login-2-x-optionsListItem)
@@ -142,6 +142,5 @@
 :global(.vtex-login-2-x-buttonLink){background-image: url('https://mercadaodosoculosb2b.vtexassets.com/arquivos/user-32.png');background-repeat: no-repeat;
   background-position: center;}
   :global(.vtex-minicart-2-x-minicartContainer){margin-left: 0px!important;}
-  :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile){ margin-left:0px!important; }
   :global(.vtex-account_menu-link){color:#000!important;}
 }
