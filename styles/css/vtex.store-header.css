@@ -143,4 +143,5 @@
   background-position: center;}
   :global(.vtex-minicart-2-x-minicartContainer){margin-left: 0px!important;}
   :global(.vtex-account_menu-link){color:#000!important;}
+  :global(.vtex-my-account-1-x-menuLink){color:#000!important;}
 }
