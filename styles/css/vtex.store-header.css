@@ -145,6 +145,8 @@
 :global(.vtex-my-orders-app-2-x-orderHeaderValue){color:#000!important;}
 :global(.vtex-my-orders-app-2-x-orderId){color:#000!important;}
 
+:global(.c-muted-1){color:#000!important;}
+
 @media only screen and (max-width: 840px) {
 :global(.vtex-login-2-x-buttonLink){background-image: url('https://mercadaodosoculosb2b.vtexassets.com/arquivos/user-32.png');background-repeat: no-repeat;
   background-position: center;}
