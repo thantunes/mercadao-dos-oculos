@@ -213,9 +213,6 @@
 :global(.vtex-store-components-3-x-content){color: #3f3f40;    padding: 0px 15px;}
 
 
-:global(.vtex-my-orders-app-2-x-orderHeaderLabel){color:#000;}
-:global(.vtex-my-orders-app-2-x-orderHeaderValue){color:#000;}
-:global(.vtex-my-orders-app-2-x-orderId){color:#000;}
 
 
 @media only screen and (max-width: 640px) {
