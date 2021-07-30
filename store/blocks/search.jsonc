@@ -1,6 +1,9 @@
 {
   "store.search": {
     "blocks": ["search-result-layout"],
+    "parent": {
+           "challenge": "challenge.trade-policy-condition"
+         },
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -11,6 +14,9 @@
 
   "store.search#brand": {
     "blocks": ["search-result-layout"],
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
+    },
     "props": {
       "context": {
         "orderByField": "OrderByReleaseDateDESC",
@@ -24,6 +30,9 @@
 
   "store.search#department": {
     "blocks": ["search-result-layout"],
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
+    },
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -34,6 +43,9 @@
 
   "store.search#category": {
     "blocks": ["search-result-layout"],
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
+    },
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -44,6 +56,9 @@
 
   "store.search#subcategory": {
     "blocks": ["search-result-layout"],
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
+    },
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -58,7 +73,16 @@
       "search-result-layout.mobile",
       "search-not-found-layout"
     ]
+      
   },
+
+
+  "challenge.trade-policy-condition": {
+    "props": {
+      "redirectPath": "/login"
+    }
+  },
+
 
   "search-result-layout.desktop": {
     "children": [
