@@ -9,25 +9,27 @@
       "shelf.relatedProducts"
       //"product-reviews",
      // "product-questions-and-answers"
-    ]
+    ],
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
+       }
   },
   "flex-layout.row#specifications-title": {
     "children": [
       "rich-text#specifications"
     ]
   },
+  "challenge.trade-policy-condition": {
+    "props": {
+      "redirectPath": "/login"
+    }
+  },
   "rich-text#specifications": {
     "props": {
       "text": "##### ESPECIFICAÇÕES"
     }
   },
-
-
-  
-
-
-
-  "flex-layout.row#product-breadcrumb": {
+ "flex-layout.row#product-breadcrumb": {
     "props": {
       "marginTop": 4
     },

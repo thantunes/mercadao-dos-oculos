@@ -9,16 +9,25 @@
       "flex-layout.row#selling-price-savings",
       "product-installments#summary",
       "add-to-cart-button"
-    ]
+    ],
+    "parent": {
+           "challenge": "challenge.trade-policy-condition"
+         }
   },
-
-  "stack-layout#prodsum": {
+  "challenge.trade-policy-condition": {
+    "props": {
+      "redirectPath": "/login"
+    }
+  },
+ "stack-layout#prodsum": {
     "children": [
       "product-summary-image#shelf",
       "vtex.product-highlights@2.x:product-highlights#collection",
       "modal-trigger#quickview" // Check quickview.jsonc
     ]
   },
+
+
 
   "product-summary-image#shelf": {
     "props": {
