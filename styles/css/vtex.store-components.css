@@ -212,9 +212,6 @@
 :global(.vtex-store-components-3-x-productDescriptionContainer)
 :global(.vtex-store-components-3-x-content){color: #3f3f40;    padding: 0px 15px;}
 
-
-
-
 @media only screen and (max-width: 640px) {
   :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel){ margin-top: 0px!important;}
 

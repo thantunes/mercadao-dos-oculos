@@ -13,7 +13,18 @@
    /*   "info-card#home",*/
      
    /*    "newsletter"*/
-    ]
+    ],
+   "parent": {
+   "challenge": "challenge.trade-policy-condition"
+    }
+  },
+
+
+  "challenge.trade-policy-condition": {
+    "props": {
+      "redirectPath": "/login",
+      "defaultContentVisibility": "hidden"
+    }
   },
 
   "list-context.image-list#demo": {
